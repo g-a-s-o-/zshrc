@@ -1,7 +1,8 @@
 autoload -Uz compinit
 compinit
 
-source .zsh_alias
+ZSHDIR=${HOME}/.zsh
+source ${ZSHDIR}/alias
 
 setopt auto_cd
 setopt auto_param_keys
@@ -70,7 +71,7 @@ SPROMPT=$tmp_sprompt
 ${PROMPT}"
 ;
 
-HISTFILE=~/.zsh_history
+HISTFILE=${ZSHDIR}/history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt hist_ignore_all_dups
