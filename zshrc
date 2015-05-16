@@ -20,7 +20,7 @@ setopt nolistbeep
 setopt print_eight_bit
 
 export LS_COLORS='gxfxcxdxbxegedabagacad'
-export LS_COLORS='di=01;34'
+export LS_COLORS='di=01;36'
 export EDITOR=vim
 export TERM=xterm-256color
 export CVS_RSH=ssh
@@ -37,7 +37,10 @@ bindkey "^n" history-beginning-search-forward
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:sudo:*' command-path ${PATH}
 zstyle ':completion:*' format '%F{blocks}%d%f'
-zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
+#zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*:default' list-colors ${LS_COLORS}
+
 
 function reload() {
 source ${HOME}/.zshrc
