@@ -19,7 +19,7 @@ setopt no_beep
 setopt nolistbeep
 setopt print_eight_bit
 
-export LS_COLORS='gxfxcxdxbxegedabagacad'
+export LSCOLORS='gxfxcxdxbxegedabagacad'
 export LS_COLORS='di=01;34'
 export EDITOR=vim
 export TERM=xterm-256color
