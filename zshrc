@@ -53,7 +53,7 @@ source ${HOME}/.zshrc
 
 export LANG=en_US.UTF-8
 
-PATH=~/bin:/opt/local/bin:/opt/local/sbin:${PATH}
+export PATH=~/bin:/opt/local/bin:/opt/local/sbin:${PATH}
 
 autoload -U colors
 colors
