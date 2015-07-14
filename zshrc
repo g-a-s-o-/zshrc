@@ -19,13 +19,8 @@ setopt no_beep
 setopt nolistbeep
 setopt print_eight_bit
 
-<<<<<<< HEAD
-export LSCOLORS='gxfxcxdxbxegedabagacad'
-export LS_COLORS='di=01;34'
-=======
 export LS_COLORS='gxfxcxdxbxegedabagacad'
 export LS_COLORS='di=01;36'
->>>>>>> b652e8e71a37bddb1aec2a7b3f32763cdf5fca07
 export EDITOR=vim
 export TERM=xterm-256color
 export CVS_RSH=ssh
