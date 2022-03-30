@@ -24,7 +24,7 @@ export LS_COLORS='di=01;36'
 export EDITOR=vim
 export TERM=xterm-256color
 export CVS_RSH=ssh
-export TMPDIR=/private/tmp
+export TMPDIR=/tmp
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 export LESSCHARSET=utf-8
 
